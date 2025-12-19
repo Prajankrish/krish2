@@ -7,3 +7,17 @@ git branch -M main  #renames the default branch to 'main'
 git remote add origin https://github.com/Prajankrish/krish2.git  #adds a remote repository
 git push -u origin main  #pushes the local 'main' branch to the remote repository
 cd ..  #moves back to parent directory
+
+## creating a branch ##
+git branch -a
+git pull     # pulls the latest changes from the remote repository
+git checkout gitbranch1 #switches to the branch named 'gitbranch1'
+## create a new file in gitbranch1 ##
+git status  #checks the status of the working directory
+git add .    #stages all changes for commit
+git commit -m "Added new file in gitbranch1"  #creates a commit with a message
+git push origin gitbranch1  #pushes the 'gitbranch1' branch to the remote repository
+git checkout main  #switches back to the 'main' branch
+git diff gitbranch1  #shows the differences between 'main' and 'gitbranch1' branches
+git merge gitbranch1  #merges changes from 'gitbranch1' into 'main'
+git push origin main  #pushes the updated 'main' branch to the remote repository
