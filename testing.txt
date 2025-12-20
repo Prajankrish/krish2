@@ -1,1 +1,1 @@
-Created a new file
+Created a distinct text file which is used to learn the commands in Git. 
